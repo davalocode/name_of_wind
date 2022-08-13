@@ -1,0 +1,263 @@
+body {
+    background: url(img/fondo.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: fantasy;
+    text-align: center;
+    
+}
+
+
+/*------------------CABECERA----------------------*/
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.329);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger a {
+    display: none;
+}
+
+header a {
+    margin-left: 1%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 200ms;
+}
+
+header a:hover {
+    margin-bottom: 10px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
+.contact a {
+    margin-left: 10%;
+}
+
+.links {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*-----------BIENVENIDA------------------*/
+.welcome {
+    margin: 0px auto;
+    margin-top: 3%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.548);
+    height: 20em;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.welcome p {
+    width: 70%;
+    margin: 1%;
+}
+
+.welcome img {
+    margin: 1%;
+    width: 20%;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+/*--------------CONTENEDOR PRINCIPAL-------------------*/
+.information {
+    margin: 0px auto;
+    margin-top: 5%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*LIBROS*/
+
+.books h2 {
+    margin: 3%;
+    font-family: 'MedievalSharp';
+}
+
+.books {
+    width: 49%;
+    margin-right: 1%;
+    background-color: rgba(255, 255, 255, 0.548);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.books div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 3%;
+    box-shadow: 5px 5px 5px 5px  black;
+    border-radius: 10px;
+    background-color: rgba(137, 176, 235, 0.185);
+}
+.books div img {
+    width: 20%;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: all 300ms;
+}
+
+.books div img:hover {
+    width: 21%;
+    box-shadow: 5px 5px 5px white;
+}
+
+.books p {
+    margin: 5%;
+}
+
+/*PERSONAJES*/
+
+.characters h2 {
+    margin: 3%;
+    font-family: 'MedievalSharp';
+}
+
+.characters {
+    width: 49%;
+    background-color: rgba(255, 255, 255, 0.548);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.characters div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 3%;
+    box-shadow: 5px 5px 5px 5px  black;
+    border-radius: 10px;
+    background-color: rgba(137, 176, 235, 0.185);
+}
+.characters div img {
+    width: 20%;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: all 300ms;
+    height: 98.5%;
+}
+
+.characters div img:hover {
+    width: 21%;
+    box-shadow: 5px 5px 5px white;
+}
+
+.characters p {
+    margin: 5%;
+}
+
+/*AUTOR*/
+.author h2 {
+    font-family: 'MedievalSharp';
+}
+.author {
+    margin: 0px auto;
+    margin-top: 1%;
+    background-color: rgba(255, 255, 255, 0.548);
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.author div {
+    margin: 3%;
+}
+
+.author img {
+    height: 20em;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+@media screen and (max-width:1200px) {
+    .author div:nth-child(3) {
+        display: none;
+    }
+    .information p {
+        display: none;
+    }
+    .author p {
+        display: block;
+    }
+    .books div img {
+        width: 90%;
+        transition: all 300ms;
+    }
+    .books div img:hover {
+        width: 99%;
+    }
+    .characters div img {
+        width: 90%;
+        transition: all 300ms;
+    }
+    .characters div img:hover {
+        width: 99%;
+    }
+
+    /*Hamburger*/
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger {
+        height: 2.5em;
+        transition: all 300ms;
+    }
+
+    .hamburger:hover {
+        margin-top: 100%;
+        margin-left: 10%;
+        width: 100%;
+        height: 8em;
+        background-color: rgba(0, 0, 0, 0.205);
+        border-radius: 10px;
+    }
+
+    .hamburger:hover a {
+        display: block;
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    .hamburger a {
+        margin: 5%;
+    }
+
+    .links a {
+        display: none;
+    }
+    .links {
+        width: 10%;
+    }
+
+}
